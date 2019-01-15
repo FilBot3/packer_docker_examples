@@ -25,7 +25,7 @@ default and do what it says.
 # References
 
 * [Packer](https://www.packer.io)
-  * [Docker Builder]https://www.packer.io/docs/builders/docker.html)
+  * [Docker Builder](https://www.packer.io/docs/builders/docker.html)
   * [Docker Post-Processor Import](https://www.packer.io/docs/post-processors/docker-import.html)
 * [Docker](https://docs.docker.com)
 * [Docker-Compose](https://docs.docker.com/compose/)
