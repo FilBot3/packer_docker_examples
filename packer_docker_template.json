@@ -1,0 +1,29 @@
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "centos:7",
+      "export_path": "packer_image.tar"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "yum install -y vim",
+        "echo 'farts'"
+      ]
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "docker-save",
+      "path": "fart_image.tar"
+    },
+    {
+      "type": "docker-import",
+      "repository": "pred/centos7",
+      "tag": "0.1.0"
+    }
+  ]
+}

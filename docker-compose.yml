@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  python-flask:
+    image: python:3.7.2
+    volumes:
+      - ".:/usr/src/myapp"
+    ports:
+      - "5000:5000"
+    working_dir: /usr/src/myapp
+    #command: python phil.py
+    command: python phil.py
+...
